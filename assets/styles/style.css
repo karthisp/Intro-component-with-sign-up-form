@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,5 +15,7 @@ body {
     background-image: url('/assets/images/bg-intro-desktop.png');
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-color: hsl(0, 100%, 74%); */
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
 }
