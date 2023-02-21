@@ -31,14 +31,26 @@ a {
 .main-section {
     display:flex;
     max-width:1000px;
+    row-gap: 30px;
 }
 
 .intro-text-container, .intro-form-container {
     flex: 0 0 50%;
 }
 
+.intro-heading {
+    font-size: 40px;
+}
+
+.intro-pitch {
+    margin-top:20px;
+    word-break: break-all;
+    line-height: 175%;
+}
+
 .intro-text-container {
     color:white;
+    align-self: center;
 }
 
 .intro-form-container {
