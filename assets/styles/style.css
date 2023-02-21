@@ -28,3 +28,14 @@ body {
     display:flex;
     max-width:1000px;
 }
+
+.intro-text-container, .intro-form {
+    border:1px solid yellow;
+    flex: 0 0 50%;
+    color:white;
+}
+
+.intro-form {
+    display:flex;
+    flex-direction: column;
+}
