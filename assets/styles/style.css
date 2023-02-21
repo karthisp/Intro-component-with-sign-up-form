@@ -18,4 +18,13 @@ body {
     background-size: cover;
     background-color: hsl(0, 100%, 74%);
     font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    border:1px solid black;
+    display:flex;
+    max-width:1000px;
 }
