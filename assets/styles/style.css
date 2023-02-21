@@ -94,3 +94,15 @@ a {
     border:none;
     border-radius: 5px;
 }
+
+.intro-terms {
+    font-size: 10px;
+    text-align: center;
+    color:hsl(246, 25%, 77%);
+    font-weight: 700;
+}
+
+.intro-terms-doc {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
