@@ -23,14 +23,17 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    border-radius: 10px;
+}
+
 .main-section {
-    border:1px solid black;
     display:flex;
     max-width:1000px;
 }
 
 .intro-text-container, .intro-form {
-    border:1px solid yellow;
     flex: 0 0 50%;
     color:white;
 }
@@ -38,4 +41,15 @@ body {
 .intro-form {
     display:flex;
     flex-direction: column;
+}
+
+.intro-trial {
+    background: hsl(248, 32%, 49%);
+    color:white;
+    padding:10px;
+    text-align: center;
+}
+
+.intro-trial-period {
+    font-weight: 700;
 }
