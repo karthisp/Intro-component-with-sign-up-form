@@ -33,23 +33,48 @@ a {
     max-width:1000px;
 }
 
-.intro-text-container, .intro-form {
+.intro-text-container, .intro-form-container {
     flex: 0 0 50%;
+}
+
+.intro-text-container {
     color:white;
+}
+
+.intro-form-container {
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    row-gap: 15px;
 }
 
 .intro-form {
     display:flex;
     flex-direction: column;
+    background:white;
+    padding: 40px 30px;
+    row-gap: 20px;
+    border-radius: 10px;
 }
 
 .intro-trial {
     background: hsl(248, 32%, 49%);
     color:white;
-    padding:10px;
+    padding:20px;
     text-align: center;
+    width:100%;
 }
 
 .intro-trial-period {
     font-weight: 700;
+}
+
+.intro-form-input {
+    padding:10px 20px;
+    border-radius: 4px;
+}
+
+.intro-form-input:active {
+    border:1px solid hsl(246, 25%, 77%);
+    background: none;
 }
