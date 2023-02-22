@@ -31,7 +31,7 @@ a {
 .main-section {
     display:flex;
     max-width:1000px;
-    row-gap: 30px;
+    column-gap: 30px;
 }
 
 .intro-text-container, .intro-form-container {
@@ -117,4 +117,10 @@ a {
 .intro-terms-doc {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+@media screen and (max-width:818px) {
+    .main-section {
+        flex-direction: column;
+    }
 }
