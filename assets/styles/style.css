@@ -30,12 +30,16 @@ a {
 
 .main-section {
     display:flex;
-    max-width:1000px;
-    column-gap: 30px;
+    max-width:1300px;
+    column-gap: 10%;
 }
 
-.intro-text-container, .intro-form-container {
-    flex: 0 0 50%;
+.intro-text-container {
+    flex: 0 0 40%;
+}
+
+.intro-form-container {
+    flex: 0 0 45%;
 }
 
 .intro-heading {
@@ -82,8 +86,12 @@ a {
 }
 
 .intro-form-input {
-    padding:10px 20px;
-    /* border-radius: 4px; */
+    padding:20px 40px;
+    border-radius: 5px;
+    border:1px solid hsl(246, 25%, 77%);
+    font-size: 17px;
+    font-weight: 600;
+
 }
 
 .intro-form-input:active {
@@ -92,8 +100,8 @@ a {
 }
 
 .intro-form-input:focus {
-    border:none;
-    /* background: none; */
+    outline: none;
+    border:1px solid hsl(249, 10%, 26%);
 }
 
 .intro-form-submit {
