@@ -92,7 +92,15 @@ a {
     border:1px solid hsl(246, 25%, 77%);
     font-size: 17px;
     font-weight: 600;
+    width:100%;
 
+}
+
+.intro-form-error-msg {
+    text-align: right;
+    width:100%;
+    display:inline-block;
+    color:hsl(0, 100%, 74%);
 }
 
 .intro-form-input:active {
