@@ -123,4 +123,8 @@ a {
     .main-section {
         flex-direction: column;
     }
+
+    .intro-text-container {
+        text-align: center;
+    }
 }
