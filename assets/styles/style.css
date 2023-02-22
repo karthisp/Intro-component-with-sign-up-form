@@ -101,6 +101,8 @@ a {
     width:100%;
     display:inline-block;
     color:hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
 }
 
 .intro-form-input:active {
