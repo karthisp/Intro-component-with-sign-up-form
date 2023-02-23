@@ -1,4 +1,5 @@
 const introForm = document.querySelector('.intro-form');
+const inputBoxes = introForm.querySelectorAll('.intro-form-input')
 
 introForm.addEventListener('submit', function(e){
     e.preventDefault();
@@ -23,7 +24,12 @@ introForm.addEventListener('submit', function(e){
         console.log(formContents.password)
         showError(formContents.password.parentNode)
     }
+})
 
+inputBoxes.forEach(inputBox => {
+    inputBox.addEventListener('focus', function() {
+        hideErrorMsg(this.parentNode)
+    })
 })
 
 function showError(node){
@@ -31,4 +37,11 @@ function showError(node){
     const errorReason = node.querySelector('.intro-form-error-msg')
     errorImage.classList.remove('intro-hide-elm')
     errorReason.classList.remove('intro-hide-elm')
+}
+
+function hideErrorMsg(node){
+    const errorImage = node.querySelector('.intro-form-error-icon')
+    const errorReason = node.querySelector('.intro-form-error-msg') 
+    errorImage.classList.add('intro-hide-elm')
+    errorReason.classList.add('intro-hide-elm')
 }
