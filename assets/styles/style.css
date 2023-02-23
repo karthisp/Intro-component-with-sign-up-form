@@ -65,6 +65,16 @@ a {
     row-gap: 15px;
 }
 
+.intro-form-input-container {
+    position:relative;
+}
+
+.intro-form-error-icon {
+    position:absolute;
+    bottom:50%;
+    right:5%;
+}
+
 .intro-form {
     display:flex;
     flex-direction: column;
