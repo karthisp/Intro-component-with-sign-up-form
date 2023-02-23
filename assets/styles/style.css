@@ -148,6 +148,10 @@ a {
     font-weight: 700;
 }
 
+.intro-hide-elm {
+   display:none 
+}
+
 @media screen and (max-width:818px) {
     .main-section {
         flex-direction: column;
