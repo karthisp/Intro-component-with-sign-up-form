@@ -161,8 +161,16 @@ a {
 }
 
 @media screen and (max-width:818px) {
+    body {
+        display: block;
+    }
+
     .main-section {
         flex-direction: column;
+    }
+
+    .intro-form-container {
+        margin-top:50px;
     }
 
     .intro-text-container {
