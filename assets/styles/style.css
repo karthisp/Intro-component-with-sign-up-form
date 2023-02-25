@@ -152,6 +152,10 @@ a {
    display:none 
 }
 
+.intro-form-input:invalid {
+    color:red;
+}
+
 @media screen and (max-width:818px) {
     .main-section {
         flex-direction: column;
