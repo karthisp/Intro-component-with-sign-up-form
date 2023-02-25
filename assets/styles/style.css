@@ -156,6 +156,10 @@ a {
     color:red;
 }
 
+.error-highlight {
+    border:1px solid red;
+}
+
 @media screen and (max-width:818px) {
     .main-section {
         flex-direction: column;

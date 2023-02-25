@@ -1,36 +1,32 @@
 const introForm = document.querySelector('.intro-form');
 const inputBoxes = introForm.querySelectorAll('.intro-form-input')
-const textMatch = /[a-z]{4,20}/
-const emailMatch = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
-const passwordMatch = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
 
 function validateInputValue(inputRef, type) {
     const inputValue = inputRef.value
-    if(type === 'text' && !textMatch.test(inputValue)) {
-        showError(inputRef)
+    console.log('element type ', inputRef.type)
+    const patternsToMatch = {
+        text: /[a-z]{4,20}/,
+        email: /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
+        password: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
     }
 
-    if(type === 'email' && !emailMatch.test(inputValue)) {
+    if(!patternsToMatch[inputRef.type].test(inputValue)) {
         showError(inputRef)
     }
-
-    if(type === 'password' && !passwordMatch.test(inputValue)) {
-        showError(inputRef)
-    }
-
-
 }
 
 function showError(node){
-    const errorImage = node.querySelector('.intro-form-error-icon')
-    const errorReason = node.querySelector('.intro-form-error-msg')
+    const errorImage = node.parentNode.querySelector('.intro-form-error-icon')
+    const errorReason = node.parentNode.querySelector('.intro-form-error-msg')
+    node.classList.add('error-highlight')
     errorImage.classList.remove('intro-hide-elm')
     errorReason.classList.remove('intro-hide-elm')
 }
 
 function hideErrorMsg(node){
-    const errorImage = node.querySelector('.intro-form-error-icon')
-    const errorReason = node.querySelector('.intro-form-error-msg') 
+    const errorImage = node.parentNode.querySelector('.intro-form-error-icon')
+    const errorReason = node.parentNode.querySelector('.intro-form-error-msg') 
+    node.classList.remove('error-highlight')
     errorImage.classList.add('intro-hide-elm')
     errorReason.classList.add('intro-hide-elm')
 }
