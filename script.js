@@ -3,9 +3,8 @@ const inputBoxes = introForm.querySelectorAll('.intro-form-input')
 
 function validateInputValue(inputRef, type) {
     const inputValue = inputRef.value
-    console.log('element type ', inputRef.type)
     const patternsToMatch = {
-        text: /[a-z]{4,20}/,
+        text: /[a-z]{4,}/,
         email: /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
         password: /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/
     }
@@ -50,6 +49,7 @@ introForm.addEventListener('submit', function(e){
 
 inputBoxes.forEach(inputBox => {
     inputBox.addEventListener('focus', function() {
-        hideErrorMsg(this.parentNode)
+        console.log('inside ')
+        hideErrorMsg(this)
     })
 })
